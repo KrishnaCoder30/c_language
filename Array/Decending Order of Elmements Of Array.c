@@ -6,13 +6,14 @@ int main()
 
 {
 
- int a[100],b[100];
 
  int s1;
 
  int i,j,k,n;
 
  scanf("%d",&n);
+ 
+ int a[n],b[n];
 
  printf("No. of Elements in Array:%d",n);
 
@@ -28,21 +29,13 @@ int main()
 
  	printf("\n\nElements in Array in Descending order are:");
 
- 	for(i=0;i<n;i++)
-
- 	{
-
- 		b[i]=a[i];
-
- 		}
-
  		printf("\n\n");
 
  		for(j=0;j<n;j++)
 
  		{
 
- 		for(i=0;i<n;i++)
+ 		for(i=0;i<n-1;i++)
 
   {
 
