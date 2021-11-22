@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+int i,j,k,n,*b,l;
+
+int a[100];
+
+scanf("%d",&n);
+
+printf("No. of Elements in Array : %d\n",n);
+
+for(i=0,b=a;i<n;i++,b++)
+
+{
+
+		scanf("%d",&*b);
+
+	printf(" %d ",*b);
+
+	}
+
+	scanf("%d",&k);
+
+printf("\nPosition to which Element must be added: %d\n",k);
+
+for(i=n;i>=k;i--)
+
+{
+
+	a[i]=a[i-1];
+
+	}
+
+	scanf("%d",&a[k-1]);
+
+	
+
+	
+
+	for(i=0,b=a;i<=n;i++,b++)
+
+	{
+
+		printf(" %d ",*b);
+
+		}
+
+}	
+
+		
+
+ 
