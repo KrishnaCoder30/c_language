@@ -1,0 +1,67 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+	int a[100];	int i,j[2],c,n,*b;
+
+	scanf("%d",&n);
+
+	printf("No. of Elements in Array are: %d\n Array is:",n);
+
+	for(i=0,b=a;i<n;i++,b++)
+
+	{
+
+		scanf("%d",&*b);
+
+		printf(" %d ",*b);
+
+		}
+
+		printf("\nEven Numbers are :\n");
+
+		for(i=0,b=a;i<n;i++,b++)
+
+  {
+
+			if(*b%2==0)
+
+			{
+
+			printf(" %d ",*b);
+
+			j[1]+=*b;
+
+			}
+
+		}
+
+		printf("\nSum of Even No. is : %d",j[1]);
+
+		printf("\nOdd Numbers are :\n");
+
+		for(i=0,b=a;i<n;i++,b++)
+
+		{
+
+			if(*b%2!=0)
+
+			{
+
+			printf(" %d ",*b);
+
+			j[0]+=*b;
+
+			}
+
+		}
+
+		printf("\nSum of Odd No. is : %d",j[0]);
+
+}
+
+ 
