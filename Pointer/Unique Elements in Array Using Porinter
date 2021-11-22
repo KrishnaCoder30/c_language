@@ -1,0 +1,73 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+ int a[100];
+
+ int i,j,k,n,*b;
+
+ scanf("%d",&n);
+
+ printf("No. Element in Array: %d\n",n);
+
+ for(i=0;i<n;i++)
+
+ {
+
+ 	scanf("%d",&a[i]); 	printf(" %d ",a[i]);
+
+ 	}
+
+ 	printf("\nUnique elements in Array are  :\n");
+
+ 	for(i=0,b=a;i<n;i++,b++)
+
+ 	{
+
+ 		k=1;
+
+ 		for(j=0;j<n;j++)
+
+ 		{
+
+ 			if(i!=j)
+
+ 			{
+
+ 			if(a[i]==a[j])
+
+ 			
+
+ 				{
+
+ 					k++;
+
+ 				}
+
+ 			}
+
+ 		}
+
+ 		if(k==1)
+
+ 		{
+
+ 			printf(" %d ",*b);
+
+ 		}
+
+ 
+
+ 	}
+
+ 
+
+}
+
+ 
+
+ 	
