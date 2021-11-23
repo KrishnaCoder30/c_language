@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+ 	int a[100],b[100];	int i,*j,k,n;
+
+	scanf("%d",&n);
+
+	printf("No. of Elements in Array is :-%d",n);
+
+	for(i=0,j=a;i<n;i++,j++)
+
+	{
+
+		scanf("%d",&*j);
+
+		printf("\nElement %d :-%d",i,*j);
+
+		}
+
+		scanf("%d",&k);
+
+		printf("\nPosition From which to rotate Array is : %d",k);
+
+		
+
+		printf("\nElements after rotating from %dth position are :",k);
+
+		for(i=0;i<k;i++)
+
+		{
+
+			b[9+i-k]=a[i];
+
+			}
+
+			for(i=k;i<n;i++)
+
+			{
+
+				b[i-k]=a[i];
+
+				}
+
+				for(i=0,j=b;i<n;i++,j++)
+
+				{
+
+					printf(" %d " ,*j);
+
+				}
+
+}
+
+ 
