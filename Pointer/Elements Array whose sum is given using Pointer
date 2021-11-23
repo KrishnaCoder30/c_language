@@ -1,0 +1,89 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+	int a[100];	int i,j,*k,n,b,*c;
+
+	scanf("%d",&n);
+
+	printf("No. of Elements in Array are : %d\n",n);
+
+	for(i=0,k=a;i<n;i++,k++)
+
+	{
+
+		scanf("%d",&*k);
+
+		printf("\nElement %d :- %d",i ,*k);
+
+	}
+
+	scanf("%d",&b);
+
+	printf("\nSum of Two Elements in Array is :- %d",b);
+
+	printf("\nPosition of Elements whose sum is %d are:\n",b);
+
+	for(i=0,k=a;i<n;i++,k++)
+
+	{
+
+		for(j=0,c=a;j<n;j++,c++)
+
+		{
+
+			if(*k+*c==b)
+
+			{
+
+				if(i<=j)
+
+			{
+
+				printf("%d %d\n",i,j);
+
+			}
+
+			}
+
+		}
+
+	}
+
+	printf("Elements whose sum is %d are : \n",b);
+
+	for(i=0,k=a;i<n;i++,k++)
+
+	{
+
+		for(j=0,c=a;j<n;j++,c++)
+
+		{
+
+			if(*k+*c==b)
+
+			{
+
+				if(i<=j)
+
+			{
+
+				printf("%d %d\n",*k,*c);
+
+			}
+
+			}
+
+		}
+
+	}
+
+		
+
+}
+
+ 
