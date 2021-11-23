@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+	int a[100];	int i,j,k,n,*b,*c;
+
+	scanf("%d",&n);
+
+	printf("No. of Elements in Array are :- %d\n",n);
+
+	for(i=0,b=a;i<n;i++,b++)
+
+	{
+
+		scanf("%d",&*b);
+
+		printf("\nElement %d :-%d",i,*b);
+
+		}
+
+		for(i=0,b=a;i<n;i++,b++)
+
+		{k=0;
+
+			for(j=0,c=a;j<n;j++,c++)
+
+			{
+
+				if(*b==*c)
+
+				{
+
+		   k++;
+
+		  }
+
+		 }
+
+		 printf("\nFrequency of Element %d :- %d",i,k);
+
+		 
+
+		}
+
+				
+
+}
+
+ 
