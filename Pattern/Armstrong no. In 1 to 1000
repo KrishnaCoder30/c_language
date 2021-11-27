@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+	int a,i,j,k,l,m;	printf("Armstrong No. are:-\n");
+
+	for(a=1;a<1000;a++)
+
+{
+
+		i=a/100;
+
+		j=a/10-10*i;
+
+		k=a-10*j-100*i;
+
+	
+
+		
+
+		if(a==i*i*i+j*j*j+k*k*k)
+
+		{
+
+			printf(" %d ",a);
+
+			}
+
+		}
+
+	
+
+	
+
+	
+
+}
