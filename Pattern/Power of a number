@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+ int i,a,j=1,n;
+
+ printf("Put number and its power");
+
+ scanf("%d %d " ,&i ,&n);
+
+ for(a=n;a>0;a--)
+
+ {
+
+ 	j*=i; 	}
+
+ 	printf("\n\n%d",j);
+
+ 
+
+}
