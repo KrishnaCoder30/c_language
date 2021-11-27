@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+	int a;	int i,j,k,n,c,d;
+
+	
+
+	scanf("%d %d %d ",&d ,&c ,&n);
+
+	printf("Put no. of elements in Series:- %d ",n);
+
+	printf("\nFibonacci Series is :-\n");
+
+	printf(" %d  %d ",d ,c);
+
+	for(i=0;i<n-2;i++)
+
+ {
+
+ 	k=c+d;
+
+ 	printf(" %d ",k);
+
+ 	d=c;
+
+ 	c=k;
+
+ }
+
+ 	
+
+ 
+
+}
