@@ -1,0 +1,99 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+	int a;	scanf("%d",&a);
+
+	printf("Input Month Number:-%d",a);
+
+	switch(a)
+
+	{
+
+		case 1:
+
+			printf("\nJanuary");
+
+			return;
+
+		case 2:
+
+			printf("\nFebruary");
+
+			return;
+
+		case 3:
+
+			printf("\nMarch");
+
+			return;
+
+		case 4:
+
+			printf("\nApril");
+
+			return;
+
+		case 5:
+
+			printf("\nMay");
+
+			return;
+
+		case 6:
+
+			printf("\nJune");
+
+			return;
+
+		case 7:
+
+			printf("\nJuly");
+
+			return;
+
+		case 8:
+
+			printf("\nAugust");
+
+			return;
+
+		case 9:
+
+			printf("\nSeptember");
+
+			return;
+
+		case 10:
+
+			printf("\nOctober");
+
+			return;
+
+		case 11:
+
+			printf("\nNovember");
+
+			return;
+
+		case 12:
+
+			printf("\nDecember");
+
+			return;
+
+		default:
+
+		printf("Invalid Month Number");
+
+		return;
+
+		}
+
+}
+
+ 
