@@ -1,0 +1,79 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+	int a,i,j,k,l,m,n;	printf("Palindrome numbers betn 10 and 100:-\n");
+
+	for(a=10;a<100;a++)
+
+	{
+
+		i=a/10;
+
+		j=a/1-10*i;
+
+		if(i==j)
+
+	{
+
+		printf(" %d ",a);
+
+		}
+
+		}
+
+		printf("\nPalindrome numbers betn 100 and 1000:-\n");
+
+	for(a=100;a<1000;a++)
+
+	{
+
+		i=a/100;
+
+		j=a/10-10*i;
+
+		k=a-10*j-100*i;
+
+	if(i==k)
+
+	{
+
+		printf(" %d ",a);
+
+		}
+
+		}
+
+		printf("\nPalindrome numbers betn 1000 and 10000:-\n");
+
+		for(a=1000;a<10000;a++)
+
+	{
+
+		i=a/1000;
+
+		j=a/100-10*i;
+
+		k=a/10-10*j-100*i;
+
+		l=a-10*k-100*j-1000*i;
+
+		
+
+	if(i==l && j==k)
+
+	{
+
+		printf(" %d ",a);
+
+		}
+
+		}
+
+}
+
+ 
