@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+	int i,a,n;	long long k;
+
+	scanf("%d",&n);
+
+	printf("No. whose factorial is to be printed:-%d\n",n);
+
+	k=n*(n+1)/2;
+
+	printf("\nSum of first %d natural numbers:- %d\n",n,k);
+
+	k=1;
+
+	for(a=n,i=1;a>0;a--,i++)
+
+	{
+
+		k*=i;
+
+		
+
+	}
+
+	printf("\nValue of %d Factorial is :-%d",n,k);
+
+	
+
+}
