@@ -1,0 +1,87 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+	int a[100],b[100],c[100],i,j,k,n,*e,*d;	scanf("%d",&n);
+
+	printf("No. of Elements in Array are :-%d",n);
+
+	for(i=0,e=a;i<n;i++,e++)
+
+	{
+
+		scanf("%d",&*e);
+
+		printf("\nElement %d :- %d",i+1,*e);
+
+	}
+
+	for(i=0;i<n;i++)
+
+	{
+
+		b[i]=a[i];
+
+	}
+
+	for(i=0,d=a;i<n;i++)
+
+	{
+
+		k=0;
+
+		for(j=0,e=b;j<n;j++)
+
+		{
+
+			if(*(d+i)==*(e+j))
+
+			{
+
+				*(e+j)=0;
+
+				k++;
+
+			}
+
+		}
+
+		if(c[i]!=0)
+
+		{
+
+			printf("\nFrequency of %d is %d",a[i],k);
+
+		}
+
+		c[i]=k;
+
+	
+
+	}
+
+	for(i=0;i<n;i++)
+
+	{
+
+		if(c[i]==3)
+
+		{
+
+			printf("\nElement(s) whose frequncy is 3 are/is :- %d",a[i]);
+
+		}
+
+	
+
+	}
+
+		
+
+	}
+
+ 
