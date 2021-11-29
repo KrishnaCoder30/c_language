@@ -1,0 +1,81 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+ int a[100],c[100];
+
+ int i,j,k,n,*b;
+
+ scanf("%d",&n);
+
+ printf("No. of Elements in Array are:-%d\n\n",n);
+
+ for(i=0,b=a;i<n;i++,b++)
+
+ {
+
+ 	scanf("%d",&*b); 	printf("\nElement %d:-%d",i,*b);
+
+ }
+
+ printf("\nElements in Reverse Order are :-"); 
+
+ for(i=0;i<n;i++)
+
+ {
+
+  c[i]=a[n-1-i];
+
+  
+
+ }
+
+ for(i=0,b=c;i<n;i++,b++)
+
+ {
+
+ 	printf(" %d ",*b);
+
+ }
+
+ printf("\nElements in Descending Order are:-\n");
+
+ for(i=0;i<n;i++)
+
+ {
+
+ 	for(j=0;j<n-1;j++)
+
+ 	{
+
+ 		if(a[j]<=a[j+1])
+
+ 		{
+
+ 			k=a[j];
+
+ 			a[j]=a[j+1];
+
+ 			a[j+1]=k;
+
+ 		}
+
+ 	}
+
+ }
+
+ for(i=0,b=a;i<n;i++,b++)
+
+ {
+
+ 	printf(" %d ",*b);
+
+ }
+
+}
+
+ 
