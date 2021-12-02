@@ -1,0 +1,101 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+	int a[100],b[100];	int i,j,n,m,k=0;
+
+	scanf("%d %d",&n ,&m);
+
+	printf("No. of Elements in Array 1:- %d\n",n);
+
+	printf("No. of Elements in Array 2:- %d\n",m);
+
+	
+
+		
+
+	printf("\nArray 1 is :-\n");
+
+	for(i=0;i<n;i++)
+
+	{
+
+		scanf("%d",&a[i]);
+
+		printf(" %d ",a[i]);
+
+	}
+
+	
+
+	printf("\n\nArray 2 is :-\n");
+
+	for(i=0;i<m;i++)
+
+	{
+
+		scanf("%d",&b[i]);
+
+		printf(" %d ",b[i]);
+
+	}
+
+	
+
+	for(i=0;i<n;i++)
+
+	{
+
+		for(j=0;j<m;j++)
+
+		{
+
+			if(a[i]==b[j])
+
+			{
+
+				k++;
+
+			}
+
+		}
+
+	}
+
+	
+
+	printf("\n%d\n",k);
+
+ if(k==m)
+
+ {
+
+ 	printf("\n\nArray 2 is subset of Array 1");
+
+ }
+
+ 
+
+ else if(k==n)
+
+ {
+
+ 	printf("\n\nArray 1 is subset of Array 2");
+
+ }
+
+ else
+
+ {
+
+ 	printf("\n\nArray 2 and Array 1 are not subset of each other");
+
+ }
+
+}
+
+ 
