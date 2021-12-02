@@ -1,0 +1,113 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+	int a[100][100];	int i,j,k,n;
+
+	scanf("%d",&n);
+
+	printf("Matrix is of %d*%d\n",n,n);
+
+	
+
+	for(i=0;i<n;i++)
+
+	{
+
+		for(j=0;j<n;j++)
+
+		{
+
+			scanf("%d",&a[i][j]);
+
+			printf("Element [%d][%d]:- %d\n",i,j,a[i][j]);
+
+		}
+
+	}
+
+	
+
+	printf("\n");
+
+	for(i=0;i<n;i++)
+
+	{
+
+		for(j=0;j<n;j++)
+
+		{
+
+			printf(" %d ",a[i][j]);
+
+		}
+
+		printf("\n");
+
+	}
+
+	
+
+	
+
+	printf("\n Elements in Spiral form are :- \n");
+
+		for(i=0;i<n;i++)
+
+	{
+
+		printf(" %d ",a[0][i]);
+
+	}
+
+	for(j=1;j<4;j++)
+
+	{
+
+	for(i=j;i<n-j+1;i++)
+
+	{
+
+		printf(" %d ",a[i][n-j]);
+
+	}
+
+	for(i=n-j-1;i>=j-2;i--)
+
+	{
+
+		printf(" %d ",a[n-j][i]);
+
+	}
+
+	for(i=n-j-1;i>j-1;i--)
+
+	{
+
+		printf(" %d ",a[i][j-1]);
+
+	}
+
+	for(i=j;i<n-j;i++)
+
+	{
+
+		printf(" %d ",a[j][i]);
+
+	}
+
+	
+
+	
+
+	
+
+	
+
+	}
+
+}
