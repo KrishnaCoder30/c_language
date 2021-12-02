@@ -68,8 +68,7 @@ int main()
 
 	
 
-	printf("\n%d\n",k);
-
+	
  if(k==m)
 
  {
