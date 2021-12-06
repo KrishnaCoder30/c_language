@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int Swap(int *a,int *b)
+
+{
+
+	int k=*a;	*a=*b;
+
+	*b=k;
+
+	return *a,*b;
+
+}
+
+int main()
+
+{
+
+	int a,b;
+
+	scanf("%d %d",&a,&b);
+
+	printf("N1=%d N2=%d",a,b);
+
+	Swap(&a,&b);
+
+	printf("\nN1=%d N2=%d",a,b);
+
+	
+
+}
+
+ 
