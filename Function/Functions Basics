@@ -1,0 +1,77 @@
+#include <stdio.h>
+
+int sum(int a,int b)
+
+{
+
+ return a+b;
+
+}
+
+int div(a,b)
+
+{
+
+	if(a>b)	{
+
+	 return a/b;
+
+	}
+
+	else
+
+	{
+
+		return b/a;
+
+	}
+
+}
+
+int mul(a,b)
+
+{
+
+	return a*b;
+
+}
+
+int sub(a,b)
+
+{
+
+	if(a>b)
+
+	{
+
+		return a-b;
+
+	}
+
+	else
+
+	{
+
+		return b-a;
+
+	}
+
+}
+
+int main()
+
+{
+
+	int a,b;
+
+	scanf(" %d %d",&a,&b);
+
+	printf("\nAddition of Number :- %d ",sum(a,b));
+
+	printf("\nDivision of Number :- %d ",div(a,b));
+
+	printf("\nMultipli of Number :- %d ",mul(a,b));
+
+	printf("\nSubtract of Number :- %d ",sub(a,b));
+
+	}
