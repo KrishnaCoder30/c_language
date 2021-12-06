@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int SquareOfNum(int a)
+
+{
+
+		return a*a;
+
+}
+
+int main()
+
+{
+
+	int b;
+
+	scanf("%d",&b);
+
+	printf("Square of Number :- %d",SquareOfNum(b));
+
+}
+
+ 
