@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+char type(int a)
+
+{
+
+	if(a%2==0)	{
+
+	 
+
+		return 'E';
+
+	}
+
+	else
+
+	{
+
+		char c='O';
+
+		return c;
+
+	}
+
+	}
+
+int main()
+
+{
+
+	int b;
+
+	scanf("%d",&b);
+
+	printf("The Inputed number is :- %d\nFor Odd :- O\nFor Even :- E",b);
+
+	
+
+	printf("\n\nThe type of Inputed number :- %c",type(b));
+
+}
