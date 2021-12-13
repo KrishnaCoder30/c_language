@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int Binary(int dno)
+
+{
+
+	int R,f=1;	long bno=0;
+
+	while(dno!=0)
+
+	{
+
+		R=dno%2;
+
+		bno=bno+R*f;
+
+		f=10*f;
+
+		dno=dno/2;
+
+	}
+
+	return bno;
+
+}
+
+int main()
+
+{
+
+ int dno;
+
+ long bno;
+
+ printf("Program to Convert Decimal no. to Binary No.\n");
+
+ scanf("%d",&dno);
+
+ bno=Binary(dno);
+
+ printf("\nInput Number :- %d \n",dno);
+
+ printf("Binary Form of %d :- %d",dno,bno);
+
+ 
+
+ 	
+
+}
+
+ 
