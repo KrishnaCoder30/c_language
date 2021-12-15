@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+int Sum( int a)
+
+{
+
+	int i,Sum=0;	for(i=1;i<a;i++)
+
+	{
+
+		if(a%i==0)
+
+		{
+
+			Sum+=i;
+
+		}
+
+	}
+
+	return Sum;
+
+}
+
+int main()
+
+{
+
+	int a,i;
+
+	scanf("%d",&a);
+
+	printf("Input Number :- %d\n",a);
+
+	i=Sum(a);
+
+	if(i==a)
+
+	{
+
+		printf("\nInputed Number %d is Perfect",a);
+
+	}
+
+	else
+
+	{
+
+		printf("\nInputed Number %d is not Perfect",a);
+
+	}
+
+}
+
+ 
