@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+int n=0,j;
+
+int Sum(int a)
+
+{
+
+	int i;	for(i=0;a!=0;i++)
+
+	{
+
+		j=a%10;
+
+		a=a/10;
+
+		n+=j*j*j;
+
+		}
+
+return n;
+
+}
+
+int main()
+
+{ 
+
+  int a,i;
+
+  printf("Program to check Armstrong Number");
+
+  printf("\n_________________________________\n");
+
+  scanf("%d",&a);
+
+  printf("\nInput Number :- %d",a);
+
+  i=Sum(a);
+
+  if(i==a)
+
+  {
+
+  	printf("\n%d is Armstrong Number",a);
+
+  }
+
+  else
+
+  {
+
+  	printf("\n%d is not Armstrong Number",a);
+
+  }
+
+}
