@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    char a[100000];
+    int i;
+    gets(a);
+    printf("%s",a);
+    printf("Length of String is");
+    for( i=0;a[i]!=0 ;i++)
+    {
+        i++;
+    }
+    printf("%d",i);
+}
