@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+
+void main ()
+{
+    char a[10000];
+    int i,n;
+    printf("Input String :-");
+    gets(a);
+    printf("%s",a);
+    printf("\nCharacters of String In reverse Order are :- ");
+    
+    n = strlen(a);
+    for ( i=n ; i>=0 ; i--)
+    {
+        printf(" %c ",a[i]);
+    }
+}
