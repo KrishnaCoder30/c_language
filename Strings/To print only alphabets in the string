@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <string.h>
+
+int main ()
+{
+    char a[10000];
+    int i,n,j;
+    printf("Input String ;-");
+    gets(a);
+    n=strlen(a);
+
+    for(i=0 ; i<n ; i++ )
+    {
+      for( j='A' ; j<='z' ; j++)
+      {
+          if( a[i]==j)
+          {
+              printf("%c",a[i]);
+          }
+      }
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
